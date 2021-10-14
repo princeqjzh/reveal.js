@@ -48,7 +48,7 @@ export const deserialize = (value) => {
         if (value === 'null') return null;
         else if (value === 'true') return true;
         else if (value === 'false') return false;
-        else if (value.match(/^-?[\d\.]+$/)) return parseFloat(value);
+        else if (value.match(/^-?[\d]+$/)) return parseFloat(value);
     }
 
     return value;
@@ -225,7 +225,7 @@ export const getQueryHash = () => {
 
     let query = {};
 
-    location.search.replace(/[A-Z0-9]+?=([\w\.%-]*)/gi, a => {
+    location.search.replace(/[A-Z0-9]+?=([\w%-]*)/gi, a => {
         query[a.split('=').shift()] = a.split('=').pop();
     });
 
