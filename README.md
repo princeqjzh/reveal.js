@@ -21,6 +21,36 @@ The full reveal.js documentation is available at [revealjs.com](https://revealjs
 ## Online Editor
 Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
 
+## Full setup
+
+Some reveal.js features, like external Markdown and speaker notes, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.
+
+1. Install [Node.js](http://nodejs.org/) (4.0.0 or later)
+
+2. Clone the reveal.js repository
+   ```sh
+   $ git clone https://github.com/hakimel/reveal.js.git
+   ```
+
+3. Navigate to the reveal.js folder
+   ```sh
+   $ cd reveal.js
+   ```
+
+4. Install dependencies
+   ```sh
+   $ npm install
+   ```
+
+5. Serve the presentation and monitor source files for changes
+   ```sh
+   $ npm start
+   ```
+
+6. Open <http://localhost:8000> to view your presentation
+
+   You can change the port by using `npm start -- --port=your_port`.
+
 ## License
 
 MIT licensed
