@@ -29,7 +29,7 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
 
 2. Clone the reveal.js repository
    ```sh
-   $ git clone https://github.com/hakimel/reveal.js.git
+   $ git clone https://github.com/princeqjzh/reveal.js.git
    ```
 
 3. Navigate to the reveal.js folder
